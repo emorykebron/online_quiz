@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Exam</title>
+  <link rel="stylesheet" href="css.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+#home {
+  background-image: url('edk.jpg');
+  height: 600px;
+  width: 1400px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+#homeText {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#homeFooter {
+  margin-top: 45%;
+  background-color: #ffffff;
+  height: 100px;
+  width: 1390px;
+  margin-bottom: 20px;
+}
+
+#logo {
+  height: 300px;
+  width: 300px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img id="logo" src="logo1-removebg-preview.png" alt="">
+  <div style="margin-top: 3%;">
+  <h1> <b>Exam PreP</b> </h1>
+  <p>By <b>ProkTavo</b> Marketing and Digital Services</p>
+</div>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#scratch">Game</a>
+  <a href="#About us">About us</a>
+  <a href="#" style="float:right">Contact us</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" id="home">
+  
+      <div id="homeFooter">
+    <p id="homeText"><b>Its an engaging an online platform designed for students, utilizing the coding enviroment to create an interactive and fun learn enviroment. Our mission is to foster a love for Education by providing a safe space where children can explore, practice, and enhance thier mathematical skills through gamified challenges and collabrotive problem-solving</b></p>
+    </div>
+    </div>
+    <div class="card">
+      <main>
+        <section id="exam">
+            <h2>Sample Exam</h2>
+            <p id="timer">Time Remaining: <span id="time">:10>
+            </span></p>
+
+            <form id="exam-form">
+                <div class="question">
+                    <p>1. What is the capital of France?</p>
+                    <label><input type="radio" name="q1" value="a"> A. Paris</label>
+                    <label><input type="radio" name="q1" value="b"> B. London</label>
+                    <label><input type="radio" name="q1" value="c"> C. Berlin</label>
+                </div>
+                <div class="question">
+                    <p>2. What is 2 + 2?</p>
+                    <label><input type="radio" name="q2" value="a"> A. 3</label>
+                    <label><input type="radio" name="q2" value="b"> B. 4</label>
+                    <label><input type="radio" name="q2" value="c"> C. 5</label>
+             <div class="question">
+                     <p>3. What is the value of (8*4)+/- 9?</p>
+                  <label><input type="radio" name="q3" value="a"> A. 23</label>
+                  <label><input type="radio" name="q3" value="b"> B. 40</label>
+                  <label><input type="radio" name="q3" value="c"> C. 41</label>
+            </div>
+            </div>
+            <div class="question">
+                <p>4. what do you call a person without a body and a nose?
+                    <label><input type="radio" name="q4" value="a"> A. Disabled</label>
+                    <label><input type="radio" name="q4" value="b"> B. nobody knows</label>
+                        <label><input type="radio" name="q4" value="c"> C. can't be determined</label>
+                </p>
+            </div>
+                <button type="submit">Submit Exam</button>
+            </form>
+        </section> 
+    </main>
+    </div>
+    <div class="card" id="scratch">
+      <h2>Maths with Scratch</h2>
+      <iframe src="https://scratch.mit.edu/projects/1050279521/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <p><b>Purpose:</b></p>
+      <p><b>Its an engaging Gamified platform designed for children, utilizing the scratch programming enviroment to create an interactive and fun learn enviroment. Our mission is to foster a love for mathematics by providing a safe space where children can explore, practice, and enhance thier mathematical skills through gamified challenges and collabrotive problem-solving</b></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card" id="About us">
+      <h2>About Us</h2>
+      <p>About Us
+        Welcome to ProkTavo Marketing and Digital Services, where innovation meets expertise to transform your business into a digital powerhouse. Founded on the principles of creativity, integrity, and results, we are dedicated to delivering exceptional digital solutions that propel your brand forward in today's fast-paced digital landscape.
+        
+  </p>
+    </div>
+   
+    <div class="card">
+      <h3>Contact us</h3>
+      <b><p>Email: kebronalemseged742@gmail.com </p>
+      <p>Instagram: <a href="https://www.instagram.com/emorykebron">emorykebron</a>  </p>
+      <p>Phone Number: +251911010869  </p></b>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 Online Exam Platform</p>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
+
+
